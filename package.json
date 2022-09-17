@@ -4,8 +4,18 @@
   "description": "It comprises of `MongoDB`, `Express`, `React` and `Node`. <br><br> Of which `React` is used for **front-end development** <br> And `MongoDB`, `Express`, `Node` for **back-end development**",
   "main": "index.js",
   "scripts": {
+    "build": "cd server && npm install  && cd ../client && npm install && npm run build",
+    "start": "node backend/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matiasaratano/revista.git"
+  },
+  "bugs": {
+    "url": "https://github.com/matiasaratano/revista/issues"
+  },
+  "homepage": "https://github.com/matiasaratano/revista#readme"
 }
