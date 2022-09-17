@@ -1,0 +1,11 @@
+{
+  "name": "revista",
+  "version": "1.0.0",
+  "description": "It comprises of `MongoDB`, `Express`, `React` and `Node`. <br><br> Of which `React` is used for **front-end development** <br> And `MongoDB`, `Express`, `Node` for **back-end development**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
