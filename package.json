@@ -1,4 +1,5 @@
 {
+  "homepage": "https://matiasaratano.github.io/revista",
   "name": "revista",
   "version": "1.0.0",
   "description": "It comprises of `MongoDB`, `Express`, `React` and `Node`. <br><br> Of which `React` is used for **front-end development** <br> And `MongoDB`, `Express`, `Node` for **back-end development**",
@@ -17,5 +18,7 @@
   "bugs": {
     "url": "https://github.com/matiasaratano/revista/issues"
   },
-  "homepage": "https://github.com/matiasaratano/revista#readme"
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
 }
