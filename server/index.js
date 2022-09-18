@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 const UserModel = require('./models/Users');
-
+const path = require('path');
 const cors = require('cors');
 
 app.use(express.json());
@@ -11,6 +11,14 @@ app.use(cors());
 mongoose.connect(
   'mongodb+srv://Matiasd123:Tengofrio4@cluster0.hgkbmca.mongodb.net/gesell?retryWrites=true&w=majority'
 );
+
+app.use(express.static(path.join(__dirname, 'build')));
+
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
+
+app.listen(9000);
 
 app.get('/getUsers', (req, res) => {
   UserModel.find({}, (err, result) => {
