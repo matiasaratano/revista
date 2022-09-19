@@ -51,15 +51,16 @@
     "wrappy": "^1.0.2"
   },
   "scripts": {
-    "start": "node server/index.js",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "cd ../client && gh-pages -b master -d build",
-    "build": "cd server && npm install  && cd ../client && npm install && npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/matiasaratano/revista.git"
+    "url": "https://github.com/matiasaratano/revista.git"
   },
   "author": "",
   "license": "ISC",
